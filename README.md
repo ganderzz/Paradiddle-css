@@ -1,6 +1,5 @@
 # Paradiddle
 
-------------------
 
 #### What is Paradiddle?
 
