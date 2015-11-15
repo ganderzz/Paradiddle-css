@@ -11,4 +11,4 @@ Paradiddle is a lightweight css library for developing websites.
 
 - Flexbox based grids
 - Mobile-first design
-- Built with SASS, so personalization paradiddle is a compile away
+- Built with SASS, so personalizing paradiddle is a compile away
