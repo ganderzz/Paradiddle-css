@@ -6,13 +6,19 @@
 *  ---------------------
 *  | Table of Contents |
 *  ---------------------
+*  ~ Component Enabling
 *  ~ Base
 *  ~ Grid
 */
 
-// ---- Grid Variables ----
-$row-width: 100%;
-$gutter: 20px;
+// ---- Component Enabling ----
+$enable-grids: true !default;
+
+// ---- Base ----
+
+// ---- Grid ----
+$row-width: 100% !default;
+$gutter: 20px !default;
 
 $columns: (one: 1,
           two: 2,
@@ -25,4 +31,4 @@ $columns: (one: 1,
           nine: 9,
           ten: 10,
           eleven: 11,
-          twelve: 12);
+          twelve: 12) !default;
