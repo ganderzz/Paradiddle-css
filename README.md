@@ -1,9 +1,9 @@
 # Paradiddle
 
 
-#### What is Paradiddle?
-
 *Currently Under Development*
+
+#### What is Paradiddle?
 
 Paradiddle is a lightweight css library for developing websites.
 
