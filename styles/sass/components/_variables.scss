@@ -12,13 +12,16 @@
 */
 
 // ---- Component Enabling ----
-$enable-grids: true !default;
+$enable-grids: true !default;  // (true/false) Includes grids if true, leaves it out if false
 
 // ---- Base ----
+$sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;   // Sans serif font
+$serif: "Merriweather", Times, Georgia, serif !default;                              // Serif font
 
 // ---- Grid ----
-$row-width: 100% !default;
-$gutter: 20px !default;
+$row-width: 100% !default;    // Defines the width of .row
+$gutter: 20px !default;       // Defines the size of the gutter around columns
+$column-weight: 3 !default;   // Handles responsiveness in columns. Higher number wraps columns to newline sooner.
 
 $columns: (one: 1,
           two: 2,
@@ -31,4 +34,4 @@ $columns: (one: 1,
           nine: 9,
           ten: 10,
           eleven: 11,
-          twelve: 12) !default;
+          twelve: 12) !default;  // Creates a twelve point grid-system. (ClassName: INT-Amount)

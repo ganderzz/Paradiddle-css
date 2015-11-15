@@ -19,7 +19,7 @@
   @each $class, $i in $columns {
     .#{$class} {
       width: #{$i * (100/length($columns))}%;
-      min-width: #{($i * (100/length($columns))) * 2}px;
+      min-width: #{($i * (100/length($columns))) * $column-weight}px;
       margin: $gutter;
 
       @include flex($i);
