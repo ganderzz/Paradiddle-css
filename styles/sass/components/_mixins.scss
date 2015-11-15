@@ -1,0 +1,25 @@
+// main: ../paradiddle.scss
+
+/*
+*  Paraddidle Mixins
+*/
+
+@mixin display-flex() {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flex($amount: 1) {
+  -webkit-box-flex: $amount;
+  -webkit-flex: $amount;
+      -ms-flex: $amount;
+          flex: $amount;
+}
+
+@mixin flex-flow($input: row wrap) {
+  -webkit-flex-flow: $input;
+      -ms-flex-flow: $input;
+          flex-flow: $input;
+}

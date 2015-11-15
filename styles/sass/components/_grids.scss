@@ -1,0 +1,26 @@
+// main: ../paradiddle.scss
+
+/*
+*  Paradiddle Grids
+*  -----------------
+*  To update the layout of the grids, change variables in _variables.scss
+*/
+
+.row {
+  max-width: $row-width;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @include display-flex();
+  @include flex-flow(row wrap);
+}
+
+@each $class, $i in $columns {
+  .#{$class} {
+    width: #{$i * (100/length($columns))}%;
+    min-width: #{($i * (100/length($columns))) * 2}px;
+    margin: $gutter;
+
+    @include flex($i);
+  }
+}
