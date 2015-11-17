@@ -20,18 +20,7 @@ $serif: "Merriweather", Times, Georgia, serif !default;                         
 
 // ---- Grid ----
 $row-width: 100% !default;    // Defines the width of .row
-$gutter: 20px !default;       // Defines the size of the gutter around columns
+$gutter: 1% !default;       // Defines the size of the gutter around columns
 $column-weight: 3 !default;   // Handles responsiveness in columns. Higher number wraps columns to newline sooner.
 
-$columns: (one: 1,
-          two: 2,
-          three: 3,
-          four: 4,
-          five: 5,
-          six: 6,
-          seven: 7,
-          eight: 8,
-          nine: 9,
-          ten: 10,
-          eleven: 11,
-          twelve: 12) !default;  // Creates a twelve point grid-system. (ClassName: INT-Amount)
+$columns: 12 !default;  // Creates a twelve point grid-system.

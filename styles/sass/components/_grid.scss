@@ -10,19 +10,27 @@
   .row {
     max-width: $row-width;
     margin: 0 auto;
+    padding: ($gutter/2) $gutter ($gutter/2) $gutter;
     box-sizing: border-box;
 
     @include display-flex();
     @include flex-flow(row wrap);
+
+    & >:first-child { margin-left: 0; }
   }
 
-  @each $class, $i in $columns {
-    .#{$class} {
-      width: #{$i * (100/length($columns))}%;
-      min-width: #{($i * (100/length($columns))) * $column-weight}px;
-      margin: $gutter;
+  @for $i from 1 through $columns {
+    .col-#{$i} {
+      min-width: #{($i * (100/$columns)) * $column-weight}px;
+      margin-left: $gutter;
+      word-wrap: break-word;
+      box-sizing: border-box;
 
-      @include flex($i);
+      @include flex(0 0 ($i * (100/$columns) - $gutter));
+    }
+
+    .row .offset-col-#{$i} {
+        margin-left: ($i * (100%/$columns) + $gutter);
     }
   }
 }
