@@ -1,0 +1,32 @@
+// main: ../paradiddle.scss
+
+/*
+*  Paradiddle Forms
+*  -----------------
+*  To update the layout of the forms, change variables in _variables.scss
+*/
+
+@if $enable-forms {
+    label {
+        margin-left: 5px;
+        font-weight: 600;
+    }
+
+    textarea, select, input {
+        padding: 10px;
+        margin: 5px;
+        font-size: 1rem;
+        border: 1px solid #DDD;
+        border-radius: 3px;
+        transition: box-shadow 0.17s ease-in-out;
+
+        &:focus {
+            outline-width: 0;
+            box-shadow: 0 0 3px 1px rgb(50, 190, 256);
+        }
+        &[disabled] {
+            background: #DDD;
+            cursor: not-allowed;
+        }
+    }
+}

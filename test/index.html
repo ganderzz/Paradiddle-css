@@ -7,13 +7,47 @@
     <link rel="stylesheet" href="../styles/paradiddle.css">
 
     <style>
-      .row * {
+      html, body {
+          margin: 0;
+          padding: 0;
+      }
+      .row > * {
         background: #F1F1F1;
         padding: 20px;
+      }
+      .row > * > .row div {
+          background: #DDD;
       }
     </style>
   </head>
   <body>
+
+    <section class="row">
+         <div class="col-6">
+            <input type="text" />
+         </div>
+         <div class="col-6">
+             <input type="text" disabled />
+         </div>
+    </section>
+    <section class="row">
+        <div class="col-12">
+            <textarea></textarea>
+        </div>
+    </section>
+    <section class="row">
+        <div class="col-8">
+         <label>Email: </label> <input type="text" />
+        </div>
+        <div class="col-4">
+         <label>State: </label>
+         <select>
+             <option>WA</option>
+             <option>VA</option>
+             <option>MI</option>
+         </select>
+        </div>
+     </section>
 
     <h1>h1</h1>
     <h2>h2</h2>
@@ -24,11 +58,11 @@
 
     <section class="row">
         <aside class="col-4">Side Bar</aside>
-        <main class="col-2">
-          asdasdasdasdasd
-        </main>
-        <aside class="col-4 offset-col-2">
-          testsdf
+        <aside class="col-6 offset-col-2">
+          <div class="row">
+              <div class="col-6">Side</div>
+              <div class="col-6">asdf</div>
+          </div>
         </aside>
     </section>
 

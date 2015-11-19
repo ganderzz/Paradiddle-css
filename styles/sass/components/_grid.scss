@@ -10,13 +10,14 @@
   .row {
     max-width: $row-width;
     margin: 0 auto;
-    padding: ($gutter/2) $gutter ($gutter/2) $gutter;
+    padding: $gutter $gutter $gutter 0;
     box-sizing: border-box;
 
     @include display-flex();
     @include flex-flow(row wrap);
 
-    & >:first-child { margin-left: 0; }
+    // Keeps gutter padding even when using multiple rows
+    & + .row { padding: 0 $gutter $gutter 0; }
   }
 
   @for $i from 1 through $columns {

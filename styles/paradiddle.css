@@ -83,7 +83,7 @@ h6 {
 .row {
   max-width: 100%;
   margin: 0 auto;
-  padding: 0.5% 1% 0.5% 1%;
+  padding: 1% 1% 1% 0;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -94,12 +94,12 @@ h6 {
   flex-flow: row wrap;
 }
 
-.row > :first-child {
-  margin-left: 0;
+.row + .row {
+  padding: 0 1% 1% 0;
 }
 
 .col-1 {
-  min-width: 25px;
+  min-width: 16.66667px;
   margin-left: 1%;
   word-wrap: break-word;
   box-sizing: border-box;
@@ -114,7 +114,7 @@ h6 {
 }
 
 .col-2 {
-  min-width: 50px;
+  min-width: 33.33333px;
   margin-left: 1%;
   word-wrap: break-word;
   box-sizing: border-box;
@@ -129,7 +129,7 @@ h6 {
 }
 
 .col-3 {
-  min-width: 75px;
+  min-width: 50px;
   margin-left: 1%;
   word-wrap: break-word;
   box-sizing: border-box;
@@ -144,7 +144,7 @@ h6 {
 }
 
 .col-4 {
-  min-width: 100px;
+  min-width: 66.66667px;
   margin-left: 1%;
   word-wrap: break-word;
   box-sizing: border-box;
@@ -159,7 +159,7 @@ h6 {
 }
 
 .col-5 {
-  min-width: 125px;
+  min-width: 83.33333px;
   margin-left: 1%;
   word-wrap: break-word;
   box-sizing: border-box;
@@ -174,7 +174,7 @@ h6 {
 }
 
 .col-6 {
-  min-width: 150px;
+  min-width: 100px;
   margin-left: 1%;
   word-wrap: break-word;
   box-sizing: border-box;
@@ -189,7 +189,7 @@ h6 {
 }
 
 .col-7 {
-  min-width: 175px;
+  min-width: 116.66667px;
   margin-left: 1%;
   word-wrap: break-word;
   box-sizing: border-box;
@@ -204,7 +204,7 @@ h6 {
 }
 
 .col-8 {
-  min-width: 200px;
+  min-width: 133.33333px;
   margin-left: 1%;
   word-wrap: break-word;
   box-sizing: border-box;
@@ -219,7 +219,7 @@ h6 {
 }
 
 .col-9 {
-  min-width: 225px;
+  min-width: 150px;
   margin-left: 1%;
   word-wrap: break-word;
   box-sizing: border-box;
@@ -234,7 +234,7 @@ h6 {
 }
 
 .col-10 {
-  min-width: 250px;
+  min-width: 166.66667px;
   margin-left: 1%;
   word-wrap: break-word;
   box-sizing: border-box;
@@ -249,7 +249,7 @@ h6 {
 }
 
 .col-11 {
-  min-width: 275px;
+  min-width: 183.33333px;
   margin-left: 1%;
   word-wrap: break-word;
   box-sizing: border-box;
@@ -264,7 +264,7 @@ h6 {
 }
 
 .col-12 {
-  min-width: 300px;
+  min-width: 200px;
   margin-left: 1%;
   word-wrap: break-word;
   box-sizing: border-box;
@@ -276,4 +276,33 @@ h6 {
 
 .row .offset-col-12 {
   margin-left: 101%;
+}
+
+/*
+*  Paradiddle Forms
+*  -----------------
+*  To update the layout of the forms, change variables in _variables.scss
+*/
+label {
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+textarea, select, input {
+  padding: 10px;
+  margin: 5px;
+  font-size: 1rem;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  transition: box-shadow 0.17s ease-in-out;
+}
+
+textarea:focus, select:focus, input:focus {
+  outline-width: 0;
+  box-shadow: 0 0 3px 1px #32beff;
+}
+
+textarea[disabled], select[disabled], input[disabled] {
+  background: #DDD;
+  cursor: not-allowed;
 }
