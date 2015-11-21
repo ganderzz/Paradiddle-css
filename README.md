@@ -20,7 +20,7 @@ Paradiddle is a lightweight css library for developing websites.
 
 V0.0.1
 
-    - Flexbox grids with offsets
-    - Form styling
-    - Typography and base styling
-    - Utilities
+- Flexbox grids with offsets
+- Form styling
+- Typography and base styling
+- Utilities
