@@ -14,6 +14,7 @@
 // ---- Component Enabling ----
 $enable-grids: true !default;  // (true/false) Includes grids if true, leaves it out if false
 $enable-forms: true !default;  // (true/false) Includes form styles if true, leaves it out if false
+$enable-utilities: true !default; // (true/false) Includes utilities if true, leaves it out if false
 
 // Media Queries
 $tiny: 300px !default;

@@ -5,6 +5,7 @@
     <title>Paradiddle Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../styles/paradiddle.css">
+    <link rel="stylesheet" href="../styles/libraries/normalize.css">
 
     <style>
       html, body {
@@ -24,24 +25,33 @@
 
     <section class="row">
          <div class="col-6">
-            <input type="text" />
+            <label>Text:</label> <input type="text" />
          </div>
          <div class="col-6">
-             <input type="text" disabled />
+             <input type="text" class="full-width" disabled />
          </div>
     </section>
     <section class="row">
         <div class="col-12">
-            <textarea></textarea>
+            <p class="input-information">Information</p>
+            <textarea class="full-width"></textarea>
         </div>
     </section>
     <section class="row">
-        <div class="col-8">
+        <div class="col-4">
          <label>Email: </label> <input type="text" />
+         <p class="input-information">This is where you enter an email address (XXXX@XXX.com)</p>
+        </div>
+        <div class="col-4">
+            <input type="checkbox" name="chk" value="" checked>
+            <input type="checkbox" name="chk" value="" disabled>
+            <input type="radio" name="sex" value="male">
+            <input type="radio" name="sex" value="male" disabled>
+            <input type="radio" name="sex" value="male">
         </div>
         <div class="col-4">
          <label>State: </label>
-         <select>
+         <select class="full-width">
              <option>WA</option>
              <option>VA</option>
              <option>MI</option>

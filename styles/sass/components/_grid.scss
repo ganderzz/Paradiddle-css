@@ -17,7 +17,7 @@
     @include flex-flow(row wrap);
 
     // Keeps gutter padding even when using multiple rows
-    & + .row { padding: 0 $gutter $gutter 0; }
+    & + & { padding: 0 $gutter $gutter 0; }
   }
 
   @for $i from 1 through $columns {

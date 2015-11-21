@@ -12,7 +12,7 @@
         font-weight: 600;
     }
 
-    textarea, select, input {
+    textarea, select, input, {
         padding: 10px;
         margin: 5px;
         font-size: 1rem;
@@ -28,5 +28,13 @@
             background: #DDD;
             cursor: not-allowed;
         }
+    }
+
+    .input-information {
+        display: block;
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+        color: #666;
+        line-height: 1rem;
     }
 }
