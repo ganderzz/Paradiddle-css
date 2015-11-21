@@ -10,23 +10,120 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/paradiddle.min.css" media="screen">
   </head>
   <body>
-    <section class="row page-header">
-      <div class="col-6">
+    <header class="row page-header">
+      <div class="col-12">
         <h1 class="project-name">Paradiddle</h1>
-        <h2 class="project-tagline">Lightweight css library for developing websites</h2>
+        <h2 class="project-sub-name">RLRRLRLL</h2>
       </div>
-      <div class="col-6">
-        <a href="https://github.com/ganderzz/Paradiddle" class="btn">View on GitHub</a>
-        <a href="https://github.com/ganderzz/Paradiddle/zipball/master" class="btn">Download .zip</a>
-        <a href="https://github.com/ganderzz/Paradiddle/tarball/master" class="btn">Download .tar.gz</a>
+    </header>
+
+    <aside class="row download-btns">
+        <div class="col-12">
+          <a href="https://github.com/ganderzz/Paradiddle" class="btn">View on GitHub</a>
+          <a href="https://github.com/ganderzz/Paradiddle/zipball/master" class="btn">Download .zip</a>
+        </div>
+    </aside>
+
+    <hr />
+
+    <section class="row content">
+      <div class="col-12">
+        <h4>API</h4>
+        <p>This page is constantly being updated. If part of Paradiddle doesn't exist in this API, check back soon for information.</p>
       </div>
     </section>
 
-    <section class="row">
+    <section class="row content">
       <div class="col-12">
-        <h2>Under Construction</h2>
-        <p>This page is in the works. Check back soon for Paradiddle's API.</p>
+        <h4>Grids</h4>
+        <p>
+            Grids in Paradiddle are based off of Flexbox. This makes responsiveness and layouts expremely easy.
+            <br />
+            All columns <i>must</i> be contained inside of a <code>.row</code> container. By default, there are 12 usable columns in a row. Editing the varibles and recompiling the sass files can give more or less columns per row.
+        </p>
+
+        <div class="row grids">
+            <div class="col-12">.col-12</div>
+        </div>
+        <div class="row grids">
+            <div class="col-6">.col-6</div>
+            <div class="col-6">.col-6</div>
+        </div>
+        <div class="row grids">
+            <div class="col-4">.col-4</div>
+            <div class="col-4">.col-4</div>
+            <div class="col-4">.col-4</div>
+        </div>
+        <div class="row grids">
+            <div class="col-2">.col-2</div>
+            <div class="col-2">.col-2</div>
+            <div class="col-2">.col-2</div>
+            <div class="col-2">.col-2</div>
+            <div class="col-2">.col-2</div>
+            <div class="col-2">.col-2</div>
+        </div>
+        <div class="row grids">
+            <div class="col-1">.col-1</div>
+            <div class="col-1">.col-1</div>
+            <div class="col-1">.col-1</div>
+            <div class="col-1">.col-1</div>
+            <div class="col-1">.col-1</div>
+            <div class="col-1">.col-1</div>
+            <div class="col-1">.col-1</div>
+            <div class="col-1">.col-1</div>
+            <div class="col-1">.col-1</div>
+            <div class="col-1">.col-1</div>
+            <div class="col-1">.col-1</div>
+            <div class="col-1">.col-1</div>
+        </div>
+
+        <div class="code-preview">
+            <btn class="btn show-code">Show Code</btn>
+
+            <pre class="hidden">
+                <code>
+                    &lt;div class="row">
+                        &lt;div class="col-12">.col-12&lt;/div>
+                    &lt;/div>
+                    &lt;div class="row">
+                        &lt;div class="col-6">.col-6&lt;/div>
+                        &lt;div class="col-6">.col-6&lt;/div>
+                    &lt;/div>
+                    &lt;div class="row">
+                        &lt;div class="col-4">.col-4&lt;/div>
+                        &lt;div class="col-4">.col-4&lt;/div>
+                        &lt;div class="col-4">.col-4&lt;/div>
+                    &lt;/div>
+                    &lt;div class="row">
+                        &lt;div class="col-2">.col-2&lt;/div>
+                        &lt;div class="col-2">.col-2&lt;/div>
+                        &lt;div class="col-2">.col-2&lt;/div>
+                        &lt;div class="col-2">.col-2&lt;/div>
+                        &lt;div class="col-2">.col-2&lt;/div>
+                        &lt;div class="col-2">.col-2&lt;/div>
+                    &lt;/div>
+                    &lt;div class="row">
+                        &lt;div class="col-1">.col-1&lt;/div>
+                        &lt;div class="col-1">.col-1&lt;/div>
+                        &lt;div class="col-1">.col-1&lt;/div>
+                        &lt;div class="col-1">.col-1&lt;/div>
+                        &lt;div class="col-1">.col-1&lt;/div>
+                        &lt;div class="col-1">.col-1&lt;/div>
+                        &lt;div class="col-1">.col-1&lt;/div>
+                        &lt;div class="col-1">.col-1&lt;/div>
+                        &lt;div class="col-1">.col-1&lt;/div>
+                        &lt;div class="col-1">.col-1&lt;/div>
+                        &lt;div class="col-1">.col-1&lt;/div>
+                        &lt;div class="col-1">.col-1&lt;/div>
+                    &lt;/div>
+                </code>
+            </pre>
+        </div>
+
       </div>
     </section>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="scripts/main.js" async></script>
   </body>
 </html>
